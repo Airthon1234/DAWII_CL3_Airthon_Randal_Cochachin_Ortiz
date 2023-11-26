@@ -10,4 +10,13 @@ import { CommonModule } from '@angular/common';
 })
 export class Pregunta2Component {
 
+  nota1: number = 0;
+  nota2: number = 0;
+  nota3: number = 0;
+  promedio: number = 0;
+
+  calcularPromedio(): void {
+    const promedioCalculado = this.nota1 * 0.2 + this.nota2 * 0.3 + this.nota3 * 0.5;
+    this.promedio = promedioCalculado;
+  }
 }
